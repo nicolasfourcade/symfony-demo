@@ -1,0 +1,13 @@
+version: "2"
+services:
+    site:
+        image: webdevnicolasfourcade/ubuntu-php7.1:latest
+        container_name: web
+        ports:
+            - "8080:80"
+        expose:
+            - "80"
+        depends_on:
+            - sqlite
+        volumes:
+          - ./chooseit-basket:/app
