@@ -2,7 +2,7 @@ version: "2"
 services:
     site:
         image: webdevnicolasfourcade/ubuntu-php7.1:latest
-        container_name: web
+        container_name: symfony-demo
         ports:
             - "8000:80"
         expose:
